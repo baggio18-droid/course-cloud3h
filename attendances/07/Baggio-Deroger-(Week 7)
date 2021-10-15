@@ -1,0 +1,9 @@
+In Today's class, we were asked to do personal studies. I have started to work on the quiz that was given last week, which consist of deploying an application to the cloud.
+To deploy an application:
+1. Open the Applications page in the Oracle Java Cloud Service - SaaS Extension Administration Console and click Deploy New. The Deploy Application page appears.
+2. Enter a name for the application you are deploying, and then click Choose File to search your local file steam for the application archive to be deployed. 
+After locating the archive, click OK.Oracle Java Cloud Service - SaaS Extension Control uploads and deploys the selected WAR (Web Application Archive) file or 
+EAR (Enterprise Archive) file.
+
+Once deployed, each application undergoes a series of security checks before it is actually deployed. These checks include a virus scan and a whitelist validation. 
+When deployment is successful, the application appears on the list of applications with a Status of Active.
