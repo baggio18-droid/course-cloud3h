@@ -1,0 +1,23 @@
+In Today's class, we will learn about object storage.
+By definition, Object storage is a data storage strategy that sections data into distinct units, or objects, which are stored in an isolated storehouse along with 
+all relevant metadata and a custom identifier.
+
+Object storage is designed to be a massive, scalable static data solution. Unlike file or block storage, object storage does not use a hierarchy or directory tree. 
+Instead, every distinct unit of data exists at the same level in a storage pool.
+ It allows for more significant data analytics through its use of metadata, faster data retrieval through a lack of folder hierarchy, 
+ and better resource optimization through high customizability.
+Object storage maintains availability by storing multiple copies of data over multiple nodes through a replication process. 
+
+One way to manage object storage is through the OpenIO SDS C API, which allows you to create storage pools in pseudo-containers. Below is a sample C API code which shows 
+how to store an object named object.txt in the container called CONTAINER.
+
+Data that benefits the most from object storage includes:
+
+. Unstructured data such as music, images, and videos
+. Backup and log files
+. Large sets of historical data
+. Archived files
+
+Object storage is the most scalable, efficient, and reliable storage strategy for large, static datasets.
+Combining object storage and edge computing boosts efficiency and reliability through the use of geographically diverse replication.
+Analyze business requirements and compare storage strategies to determine which one provides the best benefits for each use case.
