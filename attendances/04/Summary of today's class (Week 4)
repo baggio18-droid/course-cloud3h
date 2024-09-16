@@ -1,0 +1,23 @@
+Today we have studied about ways to create a database in a virtual machine.
+. Create a resource group.An Azure resource group is a logical container into which Azure resources are deployed and managed.
+. Create virtual machine:
+    To create a virtual machine (VM), use the az vm create command.
+    The following example creates a VM named vmoracle19c. It also creates SSH keys, if they do not already exist in a default key location. To use a specific set of keys, use the --ssh-key-value option.
+    After you create the VM, Azure CLI displays information similar to the following example. Note the value for publicIpAddress. You use this address to access the VM.
+. Create and attach a new disk for Oracle datafiles and FRA
+. Prepare the VM environment
+    Connect to the VM, Switch to the root user, Check for last created disk device that we will format for use holding Oracle datafiles, Format the device. As root user run parted on the device,
+    Create a filesystem on the device partition, Create a mount point, Mount the disk, Change permissions on the mount point, Add the mount to the /etc/fstab file, Update the /etc/hosts file with the public IP and hostname,
+    Update the hostname file, Open firewall ports
+. Create the database
+    Switch to the oracle user, Start the database listener, Create a data directory for the Oracle data files, Run the Database Creation Assistant, Set Oracle variables.
+. Oracle EM Express connectivity
+    Connect to your database using sqlplus, Once connected, set the port 5502 for EM Express, Connect EM Express from your browser. Make sure your browser is compatible with EM Express (Flash install is required).
+Automate database startup and shutdown
+The Oracle database by default doesn't automatically start when you restart the VM. To set up the Oracle database to start automatically, first sign in as root. Then, create and update some system files.
+. Sign on as root
+. Run the following command to change the automated startup flag from N to Y in the /etc/oratab file:
+. Create a file named /etc/init.d/dbora and paste the following contents
+. Change permissions on files with chmod as follows
+. Create symbolic links for startup and shutdown as follows
+. To test your changes, restart the VM
