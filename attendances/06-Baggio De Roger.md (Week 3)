@@ -1,0 +1,12 @@
+In today's class, we discussed about Oracle Could Infrastructure Compute which is a web service that provides bare metal and virtual machine (VM) compute capacity that delivers 
+performance, flexibility, and control without compromise. It's powered by Oracle’s next generation internet-scale infrastructure service and is designed to help modern enterprises 
+do more while paying less when developing and running their most demanding applications and workloads in the cloud.
+Compute enables you to provision compute capacity in minutes through an easy-to-use web console. The bare metal compute instance, once provisioned, 
+provides you access to the host. This gives you the flexibility, control, and performance without compromise needed for your most demanding applications and workloads, 
+all while paying only for what you use.
+We have also talked about the instance types:
+. Bare metal instances are on-demand, bare metal compute resources in the cloud. Unlike virtual machine (VM) instances, bare metal instances are entire physical 
+hosts dedicated to a single customer's use with no hypervisor or Oracle applied software installed. You have full control of the bare metal host's resources, 
+which gives you flexibility, control, and performance without compromise.
+. Oracle Cloud Infrastructure Compute VMs offer smaller compute shapes than bare metal instances. VMs use the same cloud-optimized hardware and networking infrastructure 
+as bare metal instances to deliver compute shape flexibility and performance for your changing application needs.
